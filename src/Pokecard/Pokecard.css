@@ -1,0 +1,82 @@
+.Pokecard {
+  width: 260px;
+  height: 400px;
+  display: inline-flex;
+  margin: 40px;
+  border: 1px solid gray;
+  background: white;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  animation: moveFromLeft 1.5s cubic-bezier(1, 1.1, 0 ,1) 0s 1 normal forwards;
+
+
+}
+
+.Pokecard-inner {
+  
+  border-radius: 25px;
+  width: 255px;
+  margin: auto auto;
+}
+
+.Pokecard-img {
+    background: lightgray;
+}
+
+.Pokecard-name {
+  color: #aa9999;
+}
+
+.Pokecard:hover{
+    z-index: 1;
+    transform: scale(1.3);
+  }
+
+.Pokecard:active{
+    z-index: -1;
+    transform: scale(1.35);
+}
+
+.Pokecard:hover img{
+  transform: scale(1.1);
+}
+
+
+
+
+
+.bug{
+    color: green;
+}
+
+.fire {
+    color: red;
+}
+
+.water {
+    color: darkblue;
+}
+
+.electric{
+    color: darkgoldenrod;
+}
+
+.poison{
+    color: purple;
+}
+
+.flying {
+    color: lightskyblue;
+}
+
+.psychic{
+    color: rgb(218, 165, 174);
+}
+
+@keyframes moveFromLeft{
+    0% { transform: translate(-1000%, 0);}
+    100% { transform: translate (0%, 0)}
+}

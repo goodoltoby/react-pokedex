@@ -1,0 +1,15 @@
+.Pokedex{
+    z-index: -1;
+}
+
+
+
+.false{
+    color: red;
+    font-weight: 400;
+}
+
+.true{
+    color: green;
+    font-weight: 400;
+}
